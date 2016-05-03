@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/small_background"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/JumpEditText"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/JumpButton"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/JumpButton"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="跳到某页"
+        android:maxLength="15"
+        android:numeric="integer"
+        android:digits="1234567890"
+        android:textColor="@color/white" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/preclose"
+      
+         />
+
+    <ImageButton
+        android:id="@+id/screenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/preButton"
+        android:background="@drawable/premax" />
+
+    <ImageButton
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/JumpButton"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/premin" />
+
+    <ImageButton
+        android:id="@+id/preButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/closeButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/prelast" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/screenButton"
+        android:background="@drawable/prenext" />
+
+    <Button
+        android:id="@+id/JumpButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nextButton"
+        android:layout_marginRight="43dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/all_buttonstyle"
+        android:text="确定"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

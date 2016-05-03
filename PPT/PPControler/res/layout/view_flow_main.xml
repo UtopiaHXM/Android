@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 第二个页面 -->
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_1"
+             android:id="@+id/view_2"
+            android:gravity="center" >
+
+<!--             <Button -->
+<!--                 android:id="@+id/a2" -->
+<!--                 android:text="a2" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" /> -->
+        </LinearLayout>
+       
+        
+        <!-- 第三个页面 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_2"
+             android:id="@+id/view_3"
+            android:gravity="center" >
+
+            <!-- <Button
+                android:id="@+id/a3"
+                android:text="a3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" /> -->
+        </LinearLayout>
+        
+        <!-- 第四个页面 -->
+ <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_3"
+             android:id="@+id/view_4"
+            android:gravity="center" >
+
+<!--             <Button -->
+<!--                 android:id="@+id/a4" -->
+<!--                 android:text="a4" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" /> -->
+        </LinearLayout>
+       
+    </ViewFlipper>
+
+</LinearLayout>

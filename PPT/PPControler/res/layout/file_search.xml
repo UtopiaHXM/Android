@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/small_background"
+    android:orientation="vertical" >
+
+    <!-- 定义一个SearchView -->
+    <!--
+        <SearchView 
+       android:id="@+id/sv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+    -->
+    <!-- 为SearchView定义自动完成的ListView -->
+ 
+ 
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="获取文件"
+        android:textColor="@color/white"
+        android:background="@drawable/all_buttonstyle"
+        android:tag="获取ppt" />
+
+    <com.example.Add_listview_style.listview_style
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/listview_style"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@color/selectcolor" >
+
+    </com.example.Add_listview_style.listview_style>
+
+    <ProgressBar
+        android:id="@+id/progressBarTransport"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:visibility="invisible" />
+      
+</RelativeLayout>

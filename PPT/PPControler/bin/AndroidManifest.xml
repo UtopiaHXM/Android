@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meimei"
+    android:versionCode="1"
+    android:versionName="1.0" android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+<!--往sdcard中写入数据的权限 -->
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+ <!--在sdcard中创建/删除文件的权限 -->
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:screenOrientation="portrait"
+        android:allowBackup="true"
+        android:icon="@drawable/micon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+ 
+        <activity
+            android:name="com.example.Activities.View_flow_activity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+             />
+     <activity
+            android:name="com.example.grehousemon.AbstractActivity"
+            android:label="@string/title_activity_abstract" >
+        </activity>
+        <activity
+            android:name="com.example.Activities.file_operate"
+            android:label="控制界面" />
+        <activity
+            android:name="com.example.Activities.bluetooth"
+            android:label="已配对蓝牙" />
+        <activity
+            android:name="com.example.Activities.wifi"
+            android:label="输入IP" />
+        <activity
+            android:name="com.example.Activities.chooseConnWay"
+            android:label="选择连接方式" />
+        <activity android:name="com.example.Activities.file_show" />
+        <activity
+            android:name="com.example.Activities.file_search"
+            android:label="文件列表" />
+
+        <activity
+            android:name="com.example.Activities.WelcomActivity"
+              android:screenOrientation="portrait"   
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+             >
+         
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+ 
+        <receiver android:name="com.example.Activities.file_search$MyReceiver" >
+            <intent-filter>
+                <action android:name="InfoBundle" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="NameStringBundle" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ConnectionBreakOut" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="NoPPT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="FileNotFound" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

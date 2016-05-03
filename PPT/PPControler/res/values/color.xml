@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="selectcolor">#66CC99</color>
+    <color name="blue">#99FFCC</color>
+    <color name="lightblue">#00BFFF</color>
+    <color name="darkblue">#191970</color>
+    <color name="Black">#000000</color><!--黑色 --> 
+    <color name="lightgreen">#669966</color><!--浅绿色 --> 
+    <color name="white">#ffffff</color><!--白色 -->   
+    <color name="black">#282828</color>
+    <color name="yellow">#ECAD10</color>
+</resources>

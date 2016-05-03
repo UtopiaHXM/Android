@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+gradient 主体渐变 startColor开始颜色，endColor结束颜色 ，
+ angle开始渐变的角度（值只能为90的倍数，
+ 0时为左到右渐变，90时为下到上渐变，依次逆时针类推）
+stroke 边框 width 边框宽度，color 边框颜色
+corners 圆角 radius 半径，0为直角
+padding text值的相对位置
+
+    -->
+
+    <item android:state_pressed="true"><shape>
+            <gradient android:endColor="#6A4A21" android:startColor="#6A4A21" />
+
+            <stroke android:width="2dip" android:color="@color/white" />
+
+            <corners android:radius="100dp" />
+
+            <padding android:bottom="5dp" android:left="5dp" android:right="5dp" android:top="5dp" />
+            
+            <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+        </shape></item>
+    <item android:state_focused="true"><shape>
+            <gradient android:endColor="#6A4A21" android:startColor="#6A4A21" />
+            <corners android:radius="100dp" />
+
+            <padding android:bottom="5dp" android:left="5dp" android:right="5dp" android:top="5dp" />
+            
+            <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+        </shape></item>
+    <item><shape>
+            <gradient android:endColor="#6A4A21" android:startColor="#6A4A21" />
+
+        <!--     <stroke android:width="2dip" android:color="@color/white" /> -->
+
+            <corners android:radius="100dip" />
+
+            <padding android:bottom="5dp" android:left="5dp" android:right="5dp" android:top="5dp" />
+            
+            
+            <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+        </shape></item>
+        
+    
+     
+    
+
+</selector>
