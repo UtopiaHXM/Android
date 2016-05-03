@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_wifinowip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="输     入IP:"
+                android:textColor="#ECAD10"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edittext_wifinowipinput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" 
+				android:textColor="#ECAD10">
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_wifinowip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="输入端口号:"
+                android:textColor="#ECAD10"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edittext_wifinowduankouinput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ECAD10"
+                android:ems="10" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_wifinowipconnect"
+            android:layout_width="153dp"
+            android:layout_height="44dp"
+            android:background="@drawable/button_selector"
+            android:text="连接"
+            android:textSize="25sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6" >
+
+		<LinearLayout
+		    android:layout_width="350dp"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+
+       <RadioGroup
+                android:id="@+id/radioGroup_wifinowsend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radiobutton_wifinowchongzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.79"
+                    android:gravity="center"
+                    android:text="重置"
+                    android:textColor="#ECAD10"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_wifinowzidingyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.00"
+                    android:text="自定义"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#ECAD10" />
+            </RadioGroup>
+
+       <SeekBar
+           android:id="@+id/seek_wifinowsendred"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" 
+           android:max="255"/>
+
+       <SeekBar
+           android:id="@+id/seek_wifinowsendgreen"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:max="255" />
+
+       <SeekBar
+           android:id="@+id/seek_wifinowsendblue"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:max="255" />
+      
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

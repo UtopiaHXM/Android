@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_wififileip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="输     入IP:"
+                android:textColor="#ECAD10"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edittext_wififileipinput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" 
+                
+				android:textColor="#ECAD10">
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_wififileip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="输入端口号:"
+                android:textColor="#ECAD10"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edittext_wififileduankouinput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ECAD10"
+                android:ems="10" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_wififileipconnect"
+            android:layout_width="153dp"
+            android:layout_height="44dp"
+            android:background="@drawable/button_selector"
+            android:text="连接"
+            android:textSize="25sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp" >
+
+            <TextView
+                android:id="@+id/textView_wififileselectfile"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="选择文件"
+                android:textColor="#ECAD10"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spinner_wififilename"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/spinner_selector"
+                android:popupBackground="@drawable/spinnerpop_selector" />
+        </LinearLayout>
+
+		<ListView
+        android:id="@+id/blueright_wififilelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:scrollbars="vertical"
+        android:layout_weight="1" 
+        >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp" >
+
+        <TextView
+            android:id="@+id/textView_wififileselected"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="您选的是"
+            android:textColor="#ECAD10"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_wififileselectfile1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.59"
+            android:gravity="center"
+            android:textColor="#ECAD10"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_wififilesendsome"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5px"
+            android:layout_weight="0.44"
+            android:background="@drawable/button_selector"
+            android:text="部分发送"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_wififilesendall"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5px"
+            android:layout_weight="0.29"
+            android:background="@drawable/button_selector"
+            android:text="重置"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+      
+    </LinearLayout>
+
+</LinearLayout>

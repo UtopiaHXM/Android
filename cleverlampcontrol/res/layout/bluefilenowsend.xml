@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="291dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RadioGroup
+                android:id="@+id/radioGroup_bluenowpeidui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radiobutton_bluenowpeidui"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="已配对"
+                    android:textColor="#ECAD10"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_bluenownopeidui"
+                    android:layout_width="185dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="未配对"
+                    android:textColor="#ECAD10"
+                    android:textSize="25sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/blueleft_bluenowlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" >
+
+    </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+       <RadioGroup
+                android:id="@+id/radioGroup_bluenowsend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radiobutton_bluenowchongzhi"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="重置"
+                    android:textColor="#ECAD10"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_bluenowzidingyi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="自定义"
+                    android:textColor="#ECAD10"
+                    android:textSize="25sp" />
+
+            </RadioGroup>
+
+       <SeekBar
+           android:id="@+id/seek_bluenowsendred"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" 
+           android:max="255"/>
+
+       <SeekBar
+           android:id="@+id/seek_bluenowsendgreen"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:max="255" />
+
+       <SeekBar
+           android:id="@+id/seek_bluenowsendblue"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:max="255" />
+      
+    </LinearLayout>
+
+</LinearLayout>

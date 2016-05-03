@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="461dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RadioGroup
+                android:id="@+id/radioGroup_peidui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radiobutton_peidui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53dp"
+                    android:layout_weight="0.97"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:text="已配对"
+                    android:textColor="#ECAD10" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_nopeidui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.00"
+                    android:text="未配对"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#ECAD10" />
+            </RadioGroup>
+        </LinearLayout>
+        <ListView
+        android:id="@+id/blueleft_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:scrollbars="vertical"
+        android:layout_weight="1" 
+       >
+    </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp" >
+
+            <TextView
+                android:id="@+id/textView_selectfile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="选择文件"
+                android:textColor="#ECAD10"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spinner_filename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_selector"
+                android:popupBackground="@drawable/spinnerpop_selector" />
+
+        </LinearLayout>
+		<ListView
+        android:id="@+id/blueright_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:scrollbars="vertical"
+        android:layout_weight="1" 
+        >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/textView_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="您选的是"
+            android:textColor="#ECAD10"
+            android:layout_weight="1"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView_selectfile1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5.49"
+            android:gravity="center"
+            android:textColor="#ECAD10"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_sendsome"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5px"
+            android:layout_weight="1.23"
+            android:background="@drawable/button_selector"
+            android:text="部分发送"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_sendall"
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5px"
+            android:layout_weight="0.24"
+            android:background="@drawable/button_selector"
+            android:text="重置"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+      
+    </LinearLayout>
+
+</LinearLayout>

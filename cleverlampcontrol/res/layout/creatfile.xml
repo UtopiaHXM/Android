@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="11"
+        android:background="#282828"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="静态"
+                    android:textColor="#ECAD10" />
+
+                <RadioButton
+                    android:id="@+id/radio_flashing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="闪烁"
+                    android:textColor="#ECAD10" />
+
+                <RadioButton
+                    android:id="@+id/radio_gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="渐变"
+                    android:textColor="#ECAD10" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <RadioButton
+                    android:id="@+id/radioButton_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:checked="true"
+                    android:text="前景色"
+                    android:textColor="#ECAD10" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="后景色"
+                    android:textColor="#ECAD10" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <Button
+                    android:id="@+id/button_colorf"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="127dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5px"
+                    android:text="色  块" />
+
+                <Button
+                    android:id="@+id/button_colors"
+                    style="?android:attr/buttonStyleSmall"
+                   
+                    android:layout_height="35dp"
+                    android:layout_width="127dp"
+                    android:layout_margin="5px"
+                    android:text="色  块"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView_red"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="红色"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ECAD10" />
+
+            <SeekBar
+                android:id="@+id/seekBar_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView_red"
+                android:max="255"
+                android:progress="255"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@drawable/thumb" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView_green"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="绿色"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ECAD10" />
+
+            <SeekBar
+                android:id="@+id/seekBar_green"
+                android:layout_width="284dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView_green"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="255"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@drawable/thumb" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView_blue"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="蓝色"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ECAD10" />
+
+            <SeekBar
+                android:id="@+id/seekBar_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView_blue"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="255"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@drawable/thumb" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView_time"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="时间"
+                android:textColor="#ECAD10"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_time"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:background="@+drawable/bottom"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="#ECAD10"
+                android:textCursorDrawable="@null"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/text_timeHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="10m/s     s"
+                android:textColor="#ECAD10"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView_number"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="次数"
+                android:textColor="#ECAD10"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_number"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:background="@+drawable/bottom"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="#ECAD10"
+                android:textCursorDrawable="@null"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/text_numberHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="    次      "
+                android:textColor="#ECAD10"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <com.example.cleverlampcontrol.MyView
+            android:id="@+id/myView1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="#282828"
+            android:gravity="right"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#282828"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="插入" />
+
+            <Button
+                android:id="@+id/button_alter"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="修改" />
+
+            <Button
+                android:id="@+id/button_delete"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="删除" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#282828"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_removeall"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="清空" />
+
+            <Button
+                android:id="@+id/button_creat"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="生成" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#282828"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_reset_zigbee"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:textSize="25dp"
+            android:layout_margin="5px"
+            android:text="单个重置" />
+
+        <Button
+            android:id="@+id/buttonresetAll_zigbee"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:textSize="25dp"
+            android:layout_margin="5px"
+            android:text="全部重置" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="324dp"
+            android:layout_height="67dp"
+            android:gravity="center"
+            android:text="草坪灯及配置文件类型"
+            android:textColor="#ECAD10"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/spinner_zigbee"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/spinner_selector"
+            android:popupBackground="@drawable/spinnerpop_selector" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="341dp"
+        android:orientation="horizontal" >
+        <ListView
+        android:id="@+id/list_zigbeeleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:scrollbars="vertical"
+        android:layout_weight="1" >
+    	</ListView>
+        <ListView
+        android:id="@+id/list_zigbeeright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:scrollbars="vertical"
+        android:layout_weight="1" >
+    	</ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textview_zigbeeselectleft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+			android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="未选择"
+            android:textColor="#ECAD10"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textview_zigbeeleft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            
+            android:textColor="#ECAD10"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textview_zigbeeselectright"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="未选择"
+            android:textColor="#ECAD10"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textview_zigbeeright"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+           
+            android:textColor="#ECAD10"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/button_zigbeesend"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:text="发 送"
+            android:textSize="25dp"
+            android:layout_margin="5px"/>
+
+    </LinearLayout>
+
+</LinearLayout>

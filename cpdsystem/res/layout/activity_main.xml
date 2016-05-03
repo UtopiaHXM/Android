@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#282828" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="72dip"
+        android:layout_height="24dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/textView_name_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="120dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginTop="100dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:background="@drawable/anduinoroubd" />
+
+    <Button
+        android:id="@+id/button_lamppeizhi"
+        android:layout_width="230sp"
+        android:layout_height="60sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="105dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/button_selector"
+        android:minHeight="36dip"
+        android:text="草坪灯配置"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_ldtime"
+        android:layout_width="230sp"
+        android:layout_height="60sp"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/button_lamppeizhi"
+        android:background="@drawable/button_selector"
+        android:minHeight="36dip"
+        android:text="路灯实时监控"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_sendfile"
+        android:layout_width="230sp"
+        android:layout_height="60sp"
+        android:layout_alignLeft="@+id/button_ldtime"
+        android:layout_alignTop="@+id/textView_name_choose"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_selector"
+        android:minHeight="36dip"
+        android:text="发送配置文件"
+        android:textSize="24sp" />
+
+</RelativeLayout>

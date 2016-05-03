@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/new_dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textview_CPDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请为你的草坪灯添加一个名字:" />
+
+    <EditText
+        android:id="@+id/editText_CPDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textview_NodeURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入节点URL：" />
+
+    <EditText
+        android:id="@+id/editText_NodeURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"  />
+
+    <TextView
+        android:id="@+id/textview_Gateway_URL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入网关URL：" />
+
+    <EditText
+        android:id="@+id/editText_Gateway_URL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+    
+</LinearLayout>

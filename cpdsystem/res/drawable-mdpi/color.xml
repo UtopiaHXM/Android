@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="font">#ECAD10</color>
+    <color name="white">#ffffff</color><!--白色 --> 
+    <color name="black">#282828</color>
+    <color name="yellow">#ECAD10</color>
+</resources>
